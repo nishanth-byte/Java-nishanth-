@@ -1,17 +1,19 @@
-/*
-Q18.Write a Java Program to print whether a number is positive or negative.
-*/
 import java.util.Scanner;
-public class Q18 {
+public class Q18{
     public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if(a > 0){
-            System.out.print("Positive");
+        Scanner sc =new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>=0 && a<=9){
+            System.out.println("single digit");
+        }
+        else if(a>=10 && a<=99)
+        {
+            System.out.println("two digit");
+        }
+        else if(a>=100 && a<=999){
+            System.out.println("three  digit");
         }
         else{
-            System.out.println("Negative");
+            System.out.println("Higher digits");
         }
-        sc.close();
-    }
-}
+    }}

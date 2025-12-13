@@ -1,18 +1,17 @@
-/*
-A computer networks student wants to convert bytes into bits. Since 1 byte = 8 bits, the program multiplies accordingly.
-Sample Input :
- Bytes: 4
-Sample output :
-Bits: 32
-*/
+import java.util.*;
+public class Q6{
+    public static void main(String[]args){
+       Scanner sc=new Scanner(System.in);
+         int a=sc.nextInt(),b=sc.nextInt(),c=sc.nextInt();
+         if(a>b && a>c){
+            System.out.println("A is greater:"+a);
+         }
+         else if(b>a && b>c){
+            System.out.println("B is greater:"+b);
+         }
+         else{
+            System.out.println("C is greater:"+c);
+         }
 
-import java.util.Scanner;
-public class Q6 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int bytes = sc.nextInt();
-        int bits = bytes * 8;
-        System.out.println("Bits: " + bits);
-        sc.close();
     }
 }

@@ -1,17 +1,16 @@
-/*
-Q17.Write a Java Program to check if a number is power of 2 using bitwise AND.
-*/
 import java.util.Scanner;
-public class Q17 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if (n > 0 && (n & (n - 1)) == 0){
-            System.out.println(n + " is a power of 2");
+public class Q17
+{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int last1=a%10;
+        int last2=b%10;
+        if(last1==last2){
+            System.out.println("last 2 digits same");
         }
         else{
-            System.out.println(n + " is not a power of 2");
+            System.out.println("Not equal");
         }
-        sc.close();
-    }
-}
+    }}
